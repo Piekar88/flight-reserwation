@@ -5,9 +5,9 @@
     "dev": "webpack-dev-server --open --history-api-fallback",
     "build": "webpack",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
-  "homepage": "https://<username>.github.io/<repository-name>/",
+  "homepage": "https://Piekar88.github.io/flight-reserwation/",
   "license": "MIT",
   "dependencies": {
     "@heroicons/react": "^2.0.17",
