@@ -14,12 +14,22 @@ module.exports = {
         use: [ 'style-loader', 'css-loader' ]
       },
       {
+        test: /\.js?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ["@babel/preset-env", "@babel/preset-react"]
+          }
+        }
+      },
+      {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2015', 'react']
+            presets: ["@babel/preset-env", "@babel/preset-react"]
           }
         }
       },
