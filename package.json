@@ -1,6 +1,9 @@
 {
   "name": "loty-rezerwacja",
   "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/Piekar88/flight-reserwation.git"
+  },
   "scripts": {
     "dev": "webpack-dev-server --open --history-api-fallback",
     "build": "webpack",
