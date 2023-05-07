@@ -1,0 +1,26 @@
+{
+  "name": "loty-rezerwacja",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "webpack-dev-server --open --history-api-fallback",
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "homepage": "https://<username>.github.io/<repository-name>/",
+  "license": "MIT",
+  "dependencies": {
+    "@heroicons/react": "^2.0.17",
+    "airport-one-embeddable-widgets": "^0.28.0",
+    "babel-plugin-react-html-attrs": "^3.0.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "jb-react-weather-widget": "^2.1.1",
+    "lodash": "^4.17.21",
+    "openweather-api-node": "^3.1.0",
+    "react-open-weather": "^1.3.2",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
