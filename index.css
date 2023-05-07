@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Manrope', sans-serif;
+	font-feature-settings: 'ss01' 1, 'ss03' 1;
+}
+body::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+  background-color: #512DA8;
+  color: white;
+}
+
+a:link {
+  color: white;
+  font-weight: bold;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: white;
+}
+
+.weather-widget-container {
+  width: 700px;
+  height: 700px;
+}
+
+.horizontal-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #482897;
+}
+
+.horizontal-menu li {
+  float: left;
+}
+
+.horizontal-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.horizontal-menu li a:hover {
+  background-color: #E040FB;
+}
+
+.main-div {
+  margin: auto;
+  width: 800px;
+}
+
+
+.logo {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #E040FB;
+  width: 600px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 10px;
+  position: relative;
+  padding-top: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo:hover {
+  animation-name: bounce;
+  animation-duration: 0.5s;
+}
+
+@keyframes bounce {
+  from { transform: translate(-50%, -50%); }
+  to { transform: translate(-50%, -60%); }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type=text], input[type=password] {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+button[type=submit] {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #E040FB;
+  color: white;
+}
+
+.logout {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #E040FB;
+  color: white;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid white;
+  margin: 20px 0;
+}
+
+.divlogout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-form-class input,
+.my-form-class select,
+.my-form-class textarea {
+  display: block;
+}
